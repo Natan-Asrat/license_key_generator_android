@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp"
+        app:flow_verticalGap="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/secret_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22dp"
+            android:text="Secret Key"
+            />
+        <EditText
+            android:id="@+id/secret_key_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_regular"
+            android:letterSpacing="0.05"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22dp"
+            android:text="UID Code"
+            android:layout_marginTop="16dp"
+            />
+        <EditText
+            android:id="@+id/code_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_regular"
+            android:letterSpacing="0.05"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:text="Verify" />
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/license_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:text="License key:"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/copyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy License Key" />
+
+
+
+    </LinearLayout>
+</ScrollView>
